@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #e2e8f0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.75fr 4fr;
+    grid-template-rows: 175px 1fr;
+    font-family: Roboto;
+}
+
+.sidebar {
+    display: grid;
+    background-color: #1992d4;
+    grid-area: 1 / 1 / 3 / 2;
+    grid-template-rows: 150px 300px 300px;
+    row-gap: 10px;
+    padding: 30px;
+}
+
+
+.nav1 {
+    display: grid;
+    align-content: center;
+}
+
+.nav2 {
+    display: grid;
+    align-content: center;
+}
+
+.Dashboard-header span:hover {
+    cursor: pointer;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #ffffff;
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.25);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.searchbar-container {
+    display: flex;
+    align-self: center;
+}
+
+.searchbar-container input {
+    width: 750px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #e2e8f0;
+    margin-left: 15px;
+}
+
+.searchbar-container i{
+    position: relative;
+    top: 8.5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.bell-account {
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.bell-account svg {
+    color: black;
+}
+.bell-account svg:hover {
+    cursor: pointer;
+}
+
+.profile {
+    width: 50px;
+    clip-path: circle();
+
+}
+
+.bell-account h3 {
+    justify-self: start;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: 25px 25px;
+    align-items: center;
+}
+
+.welcome .profile {
+    width: 65px;
+    grid-row: 1 / 3;
+}
+
+.hi {
+    font-weight: bold;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: 124px 124px 124px;
+    grid-template-rows: 50px;
+    align-self: center;
+    gap: 50px;
+}
+
+.action-buttons button {
+    border-radius: 30px;
+    background-color: #1992d4;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1588c5;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1150px 1fr;
+    grid-template-rows: repeat(2, minmax(250px, 500px));
+    background-color: #e2e8f0;
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 30px;
+    
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.your-projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+    grid-template-rows: repeat(3, minmax(100px, 250px));
+    gap: 35px;
+}
+
+.third-column {
+    display: grid;
+    grid-column: 2 / 3;
+    gap: 10px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.25);
+    border-left: 7.5px solid #f0b429;
+}
+
+.project-cards:hover {
+    box-shadow: 7.5px 7.5px 8px 3px rgba(0, 0, 0, 0.25);;
+}
+
+.card-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: end;
+    align-self: center;
+    padding-right: 25px;
+    gap: 25px
+
+}
+
+.card-icons svg:hover {
+    cursor: pointer;
+}
+
+.announcements {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.25);
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.25);
+}
+
+.trend-profile {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.trend-profile:hover {
+    background-color: #d4d3d3;
+}
+
+.trend-profile > :last-child > :first-child {
+    font-weight: bold;
+}
+
+.trend-profile p {
+    margin: 10px;
+}
+
+.sidebar span {
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75em;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+svg {
+    color: #ffffff;
+}
+
+.project-cards svg {
+    color: #000000
+}
+
+.Dashboard-header span {
+    gap: 0.4em;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.Dashboard-header svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.nav1 span:hover,
+.nav2 span:hover {
+    background-color: #227eb4;
+    cursor: pointer;
+}
+
+.announce-two {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.small-announcement {
+    padding: 5px;
+}
